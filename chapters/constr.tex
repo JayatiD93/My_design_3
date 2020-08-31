@@ -1,0 +1,173 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+%\item The figure for the parallelogram obtained in the question looks like Fig. \ref{fig:parallelogram1}.
+%%with angles $\phase{ A},\phase{ C}$ and $\phase{ B}$ and sides $a, b$ and $c$.  The unique feature of this triangle is $\phase{ C}$ which is defined to be $90\degree$.
+%with with vectors \textbf{a} and \textbf{b}.
+
+
+%\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+%\begin{figure}[!ht]
+%\centering
+%\resizebox{\columnwidth}{!}{\input{./figs/parallelo.tex}}
+%\caption{Parallelogram by Latex-Tikz}
+%\label{fig:parallelogram1}	
+%\end{figure}
+%
+%
+%\renewcommand{\thefigure}{\theenumi}
+%
+\item List the design parameters for construction
+\label{const:table1}
+\\
+\solution See Table. \ref{table:table1}. 
+%
+\begin{table}[ht!]
+\centering
+\begin{tabular}{ |p{3cm}|p{3cm}|  }
+%\hline
+% \multicolumn{2}{|c|}{Initial Input Values.} \\
+\hline
+Parameters & Values \\
+\hline
+%OA (a) & 4\\
+$$2a+b $$ & $$ 4 $$\\
+\hline
+$$a-2b$$ & $$-3 $$\\
+\hline
+$$5c-d$$ & $$ 11 $$\\
+\hline
+$$4c+3d$$ & $$24$$\\
+\hline
+%$\phase{(ACB)$ & $90^{\circ}$ \\
+%\hline
+\end{tabular}
+%\input{./tables/inp.tex}
+\caption{To construct the Parallelogram OACB}
+\label{table:table1}	
+\end{table}
+
+%\item
+%	For simplicity, let the greek letter $\alpha = \phase{ B$.  We have the following definitions.
+%\begin{equation}
+%\label{eq:tri_trig_defs}
+%\begin{matrix}
+	%\sin \theta = \frac{b}{c} & 	\cos \theta = \frac{a}{c} \\
+	%\tan \theta = \frac{c}{a} & \cot \theta = \frac{1}{\tan \theta} \\
+	%\csc \theta = \frac{1}{\sin \theta} & \sec \theta = \frac{1}{\cos \theta}
+	%\end{equation}
+%
+%\item Find the various values in Fig. \ref{fig:parallelogram1}
+%\label{const:parallelogram1}
+%\\
+%%
+%\solution From the given information, 
+%%$\triangle ABC$ are 
+%\begin{align}
+%\label{eq:constr_a}
+%\vec{a} &= \myvec{3\\1\\4} 
+%\\
+%\vec{b} &= \myvec{1\\-1\\1}, 
+%\label{eq:constr_b}
+%%\\
+%%\vec{C} &= \myvec{5\\2}
+%%\label{eq:constr_c}
+%\end{align}
+
+%The vector \textbf{a} can also be written as:\\
+%\textbf{a} = 3\^i + \^j + 4\^k ,\\
+%And the vector \textbf{b} can also be written as:\\
+%\textbf{b} = \^i - \^j + \^k
+%$\because \vec{M}$ is the midpoint of $AB$,
+%\begin{align}
+%\vec{M}= \frac{\vec{A}+\vec{B}}{2} = \frac{1}{2}\myvec{7\\-8}
+%\label{eq:constr_m}
+%\end{align}
+%
+%$\because \vec{N}$ is the midpoint of $BC$,
+%\begin{align}
+%\vec{N}= \frac{\vec{B}+\vec{C}}{2} = \frac{1}{2}\myvec{8\\0}
+%\label{eq:constr_n}
+%\end{align}
+
+%$\because \vec{P}$ is the midpoint of $CA$,
+%\begin{align}
+%\vec{P}= \frac{\vec{C}+\vec{A}}{2} = \frac{1}{2}\myvec{9\\-4}
+%\label{eq:constr_p}
+%\end{align}
+%
+%Also, $\vec{M}$ is given to be the midpoint of $C$.  Hence, 
+%\begin{align}
+%\vec{M}&= \frac{\vec{C}+\vec{D}}{2}
+%\\
+%\implies \vec{D} &= 2 \vec{M} - \vec{C} = \myvec{a\\b}
+%\label{eq:constr_d}
+%\end{align}
+%
+%The values are listed in Table. \ref{table:table2} 
+%\item List the  derived values.
+%\label{const:table2}
+%\\
+%\solution See  
+%Table. \ref{table:table2} 
+%\begin{table}[ht!]
+%\centering
+%\begin{tabular}{ |p{3cm}|p{3cm}|  }
+%\hline
+% \multicolumn{2}{|c|}{Derived Values.} \\
+%\hline
+%$\vec{O}$ & $$\begin{pmatrix}0\\0\\0\end{pmatrix} $$\\
+%\hline
+%$\vec{A}$ & $$\begin{pmatrix}3\\1\\4\end{pmatrix}$$\\						
+%\hline
+%$\vec{B}$ & $$\begin{pmatrix}1\\-1\\1\end{pmatrix} $$\\
+%\hline
+%$\vec{C}$ & $$\begin{pmatrix}4\\0\\5\end{pmatrix} $$\\
+%\hline
+%\end{tabular}
+%\caption{To get the vertices of the Parallelogram $OACB$}
+%\label{table:table2}
+%\end{table}
+%
+\item Verification of the solution by using python code	
+\\
+\solution The  following Python code verifies the solutions of a, b, c and d
+%
+\begin{lstlisting}
+codes/eq_verify.py
+\end{lstlisting}
+
+%The  following Python code verifies the cross-product value.
+%
+%\begin{lstlisting}
+%codes/cross_product_check.py
+%\end{lstlisting}
+
+%\begin{figure}[!ht]
+%\centering
+%\includegraphics[width=\columnwidth]{./figs/parallelogram.png}
+%\caption{Parallelogram generated using python 3D-plot}
+%\label{fig:paral_sss_py}
+%\end{figure}
+
+%
+%and the equivalent latex-tikz code generating Fig. \ref{fig:parallelogram1} is 
+%\begin{lstlisting}
+%figs/parallelo.tex
+%\end{lstlisting}
+%
+%The above latex code can be compiled as a standalone document as
+%\begin{lstlisting}
+%figs/triangle_fig.tex
+%\end{lstlisting}
+
+%
+
+%
+
+%
+%
+
+\end{enumerate}
+
+
