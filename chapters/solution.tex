@@ -262,6 +262,24 @@ Now, if we express the augmented matrix as Echelon form, then it will be:\\
       0       & 0    & 5   & -1  & 11\\ 
       0       & 0   & 0   & 1   & 4\\
             
+    \end{pmatrix}\\
+    \xleftrightarrow
+    [R_1\leftarrow R_1 -R_2]{R_3\leftarrow R_3 + R_4}\\
+    \begin{pmatrix}
+      2       & 0    & 0   & 0  & 2\\ 
+      0       & 1   & 0   & 0  & 2\\
+      0       & 0    & 5   & 0  & 15\\ 
+      0       & 0   & 0   & 1   & 4\\
+            
+    \end{pmatrix}\\
+    \xleftrightarrow
+    [R_1\leftarrow \frac{R_1}{2}]{R_3\leftarrow \frac{R_3}{5}}\\
+    \begin{pmatrix}
+      1       & 0    & 0   & 0  & 1\\ 
+      0       & 1   & 0   & 0  & 2\\
+      0       & 0    & 1   & 0  & 3\\ 
+      0       & 0   & 0   & 1   & 4\\
+            
     \end{pmatrix}
 \end{aligned}
 \end{equation}
@@ -272,9 +290,9 @@ So the equations have unique solution.
 \begin{equation}
 \begin{aligned}
       \begin{pmatrix}
-      2       & 1    & 0   & 0\\ 
+      1       & 0    & 0   & 0\\ 
       0       & 1   & 0   & 0\\
-      0       & 0    & 5   & -1\\ 
+      0       & 0    & 1   & 0\\ 
       0       & 0   & 0   & 1\\
             
     \end{pmatrix} \begin{pmatrix}
@@ -284,22 +302,15 @@ So the equations have unique solution.
       d\\
             
     \end{pmatrix} = \begin{pmatrix}
-      4\\ 
+      1\\ 
       2\\
-      11\\
+      3\\
       4\\
             
     \end{pmatrix} 
 \end{aligned}
 \end{equation}
-This indicates that:\\
-$2a+b$ = 4\\
-and $b$ = 2\\
-$\implies  a$ = 1.\\
-And, \\
-$5c-d$ = 11\\
-and $d$ = 4\\
-$\implies  c$ = 3.\\
-Hence, a = 1, b= 2, c= 3 and d= 4.
+$\implies $ a = 1, b= 2, c= 3 and d= 4.\\
+
 
 

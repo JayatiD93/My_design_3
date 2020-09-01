@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.18)  1 SEP 2020 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.18)  1 SEP 2020 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1638,7 +1638,12 @@ Underfull \vbox (badness 5091) has occurred while \output is active []
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]) [2
+]
+Underfull \hbox (badness 10000) in paragraph at lines 312--314
+
+ []
+
+) [2
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
@@ -1653,7 +1658,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
 Here is how much of TeX's memory you used:
  40051 strings out of 481239
  903425 string characters out of 5920377
- 1318797 words of memory out of 5000000
+ 1322797 words of memory out of 5000000
  54475 multiletter control sequences out of 15000+600000
  598532 words of font info for 156 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1666,7 +1671,7 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on document3.pdf (2 pages, 56532 bytes).
+Output written on document3.pdf (2 pages, 56458 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
