@@ -158,98 +158,6 @@ From the problem statement, we got that:\\
 a-2b=-3\\
 \end{aligned}
 \end{equation}
-These equations can be written as:\\
-
-\begin{equation}
-\begin{aligned}
-      \begin{pmatrix}
-      2       & 1\\ 
-      1       & -2\\
-            
-    \end{pmatrix} \begin{pmatrix}
-      a\\ 
-      b\\
-            
-    \end{pmatrix} = \begin{pmatrix}
-      4\\ 
-      -3\\
-            
-    \end{pmatrix} 
-\end{aligned}
-\end{equation}
-
-So the coefficient matrix $A$ can be expressed as:\\
-
-\begin{equation}
-\begin{aligned}
-    A=  \begin{pmatrix}
-      2       & 1\\ 
-      1       & -2\\
-            
-    \end{pmatrix} 
-\end{aligned}
-\end{equation}
- 
-And the augmented matrix $B$ can be expressed as:\\
-
-\begin{equation}
-\begin{aligned}
-    B=  \begin{pmatrix}
-      2       & 1   & 4\\ 
-      1       & -2  & -3\\
-            
-    \end{pmatrix} 
-\end{aligned}
-\end{equation}
-
-Now, if we express the augmented matrix as Echelon form, then it will be:\\
-
-\begin{equation}
-\begin{aligned}
-    B=  \begin{pmatrix}
-      2       & 1   & 4\\ 
-      1       & -2  & -3\\
-            
-    \end{pmatrix}\xleftrightarrow[]{R_2\leftarrow 2R_2 - R_1} 
-    \begin{pmatrix}
-      2       & 1   & 4\\ 
-      0       & -5  & -10\\
-            
-    \end{pmatrix} \xleftrightarrow[]{R_2\leftarrow \frac{R_2}{(-5)}}\\
-    \begin{pmatrix}
-      2       & 1   & 4\\ 
-      0       & 1  & 2\\
-            
-    \end{pmatrix}
-\end{aligned}
-\end{equation}
-
-So, from here we can say that the the rank of $A$ = 2 and the rank of $B$ = 2.
-So the equations have unique solution.
-
-\begin{equation}
-\begin{aligned}
-      \begin{pmatrix}
-      2       & 1\\ 
-      0       & 1\\
-            
-    \end{pmatrix} \begin{pmatrix}
-      a\\ 
-      b\\
-            
-    \end{pmatrix} = \begin{pmatrix}
-      4\\ 
-      2\\
-            
-    \end{pmatrix} 
-\end{aligned}
-\end{equation}
-This indicates that:\\
-$2a+b$ = 4\\
-and $b$ = 2\\
-$\implies  a$ = 1.\\
-
-Similarly, from the problem statement, we got that:\\
 
 \begin{equation}
 \begin{aligned}
@@ -262,20 +170,27 @@ Similarly, from the problem statement, we got that:\\
 4c+3d=24\\
 \end{aligned}
 \end{equation}
+
 These equations can be written as:\\
 
 \begin{equation}
 \begin{aligned}
       \begin{pmatrix}
-      5       & -1\\ 
-      4       & 3\\
+      2       & 1    & 0   & 0\\ 
+      1       & -2   & 0   & 0\\
+      0       & 0    & 5   & -1\\ 
+      0       & 0   & 4   & 3\\
             
     \end{pmatrix} \begin{pmatrix}
-      c\\ 
+      a\\ 
+      b\\
+      c\\
       d\\
             
     \end{pmatrix} = \begin{pmatrix}
-      11\\ 
+      4\\ 
+      -3\\
+      11\\
       24\\
             
     \end{pmatrix} 
@@ -287,22 +202,26 @@ So the coefficient matrix $A$ can be expressed as:\\
 \begin{equation}
 \begin{aligned}
     A=  \begin{pmatrix}
-      5       & -1\\ 
-      4       & 3\\
+      2       & 1    & 0   & 0\\ 
+      1       & -2   & 0   & 0\\
+      0       & 0    & 5   & -1\\ 
+      0       & 0   & 4   & 3\\
             
     \end{pmatrix} 
 \end{aligned}
 \end{equation}
-
+ 
 And the augmented matrix $B$ can be expressed as:\\
 
 \begin{equation}
 \begin{aligned}
     B=  \begin{pmatrix}
-      5       & -1   & 11\\ 
-      4       & 3   & 24\\
+      2       & 1    & 0   & 0  & 4\\ 
+      1       & -2   & 0   & 0  & -3\\
+      0       & 0    & 5   & -1  & 11\\ 
+      0       & 0   & 4   & 3   & 24\\
             
-    \end{pmatrix} 
+    \end{pmatrix}
 \end{aligned}
 \end{equation}
 
@@ -311,56 +230,76 @@ Now, if we express the augmented matrix as Echelon form, then it will be:\\
 \begin{equation}
 \begin{aligned}
     B=  \begin{pmatrix}
-      5       & -1   & 11\\ 
-      4       & 3  & 24\\
+      2       & 1    & 0   & 0  & 4\\ 
+      1       & -2   & 0   & 0  & -3\\
+      0       & 0    & 5   & -1  & 11\\ 
+      0       & 0   & 4   & 3   & 24\\
             
-    \end{pmatrix}\xleftrightarrow[]{R_2\leftarrow R_2 - R_1} 
+    \end{pmatrix}\\
+    \xleftrightarrow
+    [R_4\leftarrow R_4 - R_3]{R_2\leftarrow 2R_2 - R_1} 
     \begin{pmatrix}
-      5       & -1   & 11\\ 
-      -1       & 4  & 13\\
+      2       & 1    & 0   & 0  & 4\\ 
+      0       & -5   & 0   & 0  & -10\\
+      0       & 0    & 5   & -1  & 11\\ 
+      0       & 0   & -1   & 4   & 13\\
             
-    \end{pmatrix} \xleftrightarrow[]{R_2\leftarrow 5R_2+R_1}\\
+    \end{pmatrix}\\
+    \xleftrightarrow
+    [R_4\leftarrow 5R_4 + R_3]{R_2\leftarrow \frac{R_2}{(-5)}}\\
     \begin{pmatrix}
-      5       & -1   & 11\\ 
-      0       & 19  & 76\\
+      2       & 1    & 0   & 0  & 4\\ 
+      0       & 1   & 0   & 0  & 2\\
+      0       & 0    & 5   & -1  & 11\\ 
+      0       & 0   & 0   & 19   & 76\\
             
-    \end{pmatrix}\xleftrightarrow[]{R_2\leftarrow \frac{R_2}{19}}\\
+    \end{pmatrix}\\
+    \xleftrightarrow
+    []{R_4\leftarrow \frac{R_4}{(19)}}\\
     \begin{pmatrix}
-      5       & -1   & 11\\ 
-      0       & 1  & 4\\
+      2       & 1    & 0   & 0  & 4\\ 
+      0       & 1   & 0   & 0  & 2\\
+      0       & 0    & 5   & -1  & 11\\ 
+      0       & 0   & 0   & 1   & 4\\
             
     \end{pmatrix}
 \end{aligned}
 \end{equation}
 
-So, from here we can say that the the rank of $A$ = 2 and the rank of $B$ = 2.
+So, from here we can say that the the rank of $A$ = 4 and the rank of $B$ = 4.
 So the equations have unique solution.
 
 \begin{equation}
 \begin{aligned}
       \begin{pmatrix}
-      5       & -1\\ 
-      0       & 1\\
+      2       & 1    & 0   & 0\\ 
+      0       & 1   & 0   & 0\\
+      0       & 0    & 5   & -1\\ 
+      0       & 0   & 0   & 1\\
             
     \end{pmatrix} \begin{pmatrix}
-      c\\ 
+      a\\ 
+      b\\
+      c\\
       d\\
             
     \end{pmatrix} = \begin{pmatrix}
-      11\\ 
+      4\\ 
+      2\\
+      11\\
       4\\
             
     \end{pmatrix} 
 \end{aligned}
 \end{equation}
-
 This indicates that:\\
+$2a+b$ = 4\\
+and $b$ = 2\\
+$\implies  a$ = 1.\\
+And, \\
 $5c-d$ = 11\\
 and $d$ = 4\\
 $\implies  c$ = 3.\\
 Hence, a = 1, b= 2, c= 3 and d= 4.
-
-
-
 
 
